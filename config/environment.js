@@ -9,7 +9,7 @@ module.exports = function(environment) {
     EmberENV: {
       FEATURES: {}
     },
-
+    SECRET: process.env.SECRET,
     APP: {}
   };
 

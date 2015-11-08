@@ -6,6 +6,9 @@ module.exports = function(defaults) {
     autoprefixer: {
       browsers: ['last 2 versions'],
       cascade: false
+    },
+    dotEnv: {
+      clientAllowedKeys: ['SECRET']
     }
   });
   return app.toTree();
