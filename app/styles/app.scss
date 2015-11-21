@@ -1,1 +1,324 @@
-// TODO
+:root {
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+details {
+  display: block;
+}
+
+input {
+  &[type='number'] {
+    width: auto;
+  }
+  &[type='search'] {
+    -webkit-appearance: textfield;
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+  }
+}
+
+main {
+  display: block;
+}
+
+summary {
+  display: block;
+}
+
+pre {
+  overflow: auto;
+}
+
+progress {
+  display: inline-block;
+}
+
+
+
+template {
+  display: none;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[hidden] {
+  display: none;
+}
+
+[unselectable] {
+  user-select: none;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+* {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+::before,
+::after {
+  vertical-align: inherit;
+  text-decoration: inherit;
+}
+
+*,
+::before,
+::after {
+  border-width: 0;
+  border-style: solid;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  font: 16px/1.4 sans-serif;
+
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  color: #666;
+  background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
+hr,
+table,
+fieldset,
+figure,
+pre,
+%margin-bottom {
+  margin-bottom: 16px;
+  margin-bottom: 16px / 1rem * 1rem;
+}
+
+ul,
+ol,
+dd,
+%margin-left {
+  margin-left: 2 * 16px;
+  margin-left: 2 * 16px / 1rem * 1rem;
+}
+
+a {
+  // 
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  // 
+}
+
+button,
+input,
+select,
+textarea {
+  // background-color: $form-element-background-color;
+}
+
+button,
+input,
+select,
+textarea {
+  color: inherit;
+  outline: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+
+  -webkit-appearance: none;
+}
+
+button,
+input,
+select,
+textarea {
+  // min-height: $form-element-min-height;
+}
+
+code,
+kbd,
+pre,
+samp {
+  // font-family: $monospace-font-family, monospace;
+}
+
+nav ol,
+nav ul {
+  // list-style: $nav-list-style;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+  &::-ms-expand {
+    display: none;
+  }
+  &::-ms-value {
+    color: currentColor;
+  }
+}
+
+table {
+  // border-spacing: $table-border-spacing;
+  // border-collapse: $table-border-collapse;
+}
+
+textarea {
+  // resize: $textarea-resize;
+}
+
+@media screen {
+  [hidden~='screen'] {
+    display: inherit;
+  }
+  [hidden~='screen']:not(:active):not(:focus):not(:target) {
+    position: absolute !important;
+    clip: rect(0 0 0 0) !important;
+  }
+}
+
+html {
+  overflow: hidden;
+
+  -ms-touch-action: pan-y;
+      touch-action: pan-y;
+}
+
+body {
+  word-wrap: break-word;
+
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -ms-content-zooming: none;
+  -webkit-tap-highlight-color: transparent; // For some Androids
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-rendering: optimizeLegibility;
+  -webkit-touch-callout: none;
+  -webkit-user-drag: none;
+}
+
+input {
+  &::-webkit-input-placeholder {
+    color: currentColor;
+    font-weight: inherit;
+  }
+  &::-moz-placeholder {
+    color: currentColor;
+    font-weight: inherit;
+  }
+  &:-moz-placeholder {
+    color: currentColor;
+    font-weight: inherit;
+  }
+  &:-ms-input-placeholder {
+    color: currentColor;
+    font-weight: inherit;
+  }
+}
+
+
+.svg-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+
+body,
+body > .ember-view:first-of-type {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.canvas {
+  width: 100%;
+  height: 100%;
+  transform: translateZ(0);
+
+  *zoom: 1;
+  &-content {
+    display: flex;
+    width: inherit;
+    height: inherit;
+  }
+}
+
+.icons {
+  border:1px solid red;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-element {
+    width: 100px;
+    height: 100px;
+    margin: .5rem;
+  }
+}
+
+.icon {
+  padding: 1.5rem;
+  border-radius: 50%;
+  background-color: #f7f7f7;
+}
