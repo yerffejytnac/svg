@@ -4,7 +4,6 @@
   "description": "TODO",
   "private": true,
   "directories": {
-    "doc": "doc",
     "test": "tests"
   },
   "scripts": {
@@ -12,11 +11,13 @@
     "start": "ember server",
     "test": "ember test"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cantyjeffrey/svg"
+  },
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.1.2",
@@ -39,5 +40,13 @@
     "ember-data": "1.13.8",
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "^1.0.3"
-  }
+  },
+  "main": "ember-cli-build.js",
+  "bugs": {
+    "url": "https://github.com/cantyjeffrey/svg/issues"
+  },
+  "homepage": "https://github.com/cantyjeffrey/svg#readme",
+  "keywords": [
+    "application"
+  ]
 }
